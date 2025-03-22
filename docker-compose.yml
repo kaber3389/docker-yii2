@@ -32,7 +32,7 @@ services:
 
   yii2_nginx:
     build:
-      context: ./yii2
+      context: ./yii2-docker/yii2
       dockerfile: ./nginx/Dockerfile
     container_name: yii2_nginx
     restart: always
@@ -48,7 +48,7 @@ services:
 
   yii2_php:
     build:
-      context: ./yii2
+      context: ./yii2-docker/yii2
       dockerfile: ./php/Dockerfile
     container_name: yii2_php
     restart: always
